@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-margin-top: 5em;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -10,7 +15,11 @@ body {
 
 h1,
 h2 {
-  min-height: 25vh;
+  min-height: 10vh;
+}
+
+main {
+  margin-top: 86px;
 }
 
 /* header */
@@ -21,6 +30,10 @@ header {
   align-items: center;
   background-color: black;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 nav ul li {
@@ -29,12 +42,12 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: azure;
+  color: whitesmoke;
   padding: 1rem;
 }
 
 nav ul li a:hover {
-  background-color: azure;
+  background-color: whitesmoke;
   color: black;
 }
 
@@ -42,7 +55,7 @@ nav ul li a:hover {
 
 #herobanner {
   background-color: #333;
-  height: 100vh;
+  height: 120vh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -52,7 +65,7 @@ nav ul li a:hover {
 h1 {
   width: 600px;
   text-align: center;
-  color: azure;
+  color: whitesmoke;
   font-size: 50px;
   z-index: 1;
 }
@@ -70,7 +83,7 @@ h1 span {
 .circle {
   position: absolute;
   border-radius: 50%;
-  background: azure;
+  background: whitesmoke;
   animation: ripple 15s infinite;
   box-shadow: 0px 0px 1px 0px #333;
 }
@@ -141,4 +154,57 @@ h1 span {
   100% {
     transform: scale(0.8);
   }
+}
+
+/* About me section */
+
+#about {
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+
+#about img {
+  width: 50%;
+  border-radius: 5px;
+}
+
+#about h2 {
+  margin-top: 50px;
+}
+
+.aboutbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 5rem;
+}
+
+.aboutcontent {
+  display: block;
+  width: 400px;
+  min-height: 300px;
+  background-color: #333;
+  opacity: 0.7;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 5px black;
+  transition: all 1s;
+}
+
+.aboutcontent p {
+  color: whitesmoke;
+  line-height: 2;
+  z-index: 1;
+  padding: 2rem;
+  transition: all 1s;
+}
+
+.aboutcontent:hover {
+  box-shadow: 0 0 5px 5px black;
+}
+
+.aboutcontent p:hover {
+  color: #333;
+  background-color: whitesmoke;
+  border-radius: 5px;
 }

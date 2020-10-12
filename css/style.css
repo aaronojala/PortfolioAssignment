@@ -208,3 +208,19 @@ h1 span {
   background-color: whitesmoke;
   border-radius: 5px;
 }
+
+/* Experience section */
+
+/* image carousel */
+
+#experience img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 25rem;
+}
+
+.siema {
+  margin: 1rem 0;
+}

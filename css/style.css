@@ -336,6 +336,7 @@ h1 span {
   margin-right: auto;
   width: 100px;
   margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 #cv a {
@@ -371,4 +372,41 @@ footer a {
 footer i {
   font-size: 2rem;
   padding: 1rem;
+}
+
+/* Ipad */
+
+@media (max-width: 768px) {
+  #about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #about img {
+    margin-top: 5rem;
+  }
+
+  .aboutbox {
+    margin-right: 0;
+  }
+
+  .mobilebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #experience img.carousel {
+    width: 600px;
+  }
 }

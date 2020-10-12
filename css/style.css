@@ -212,6 +212,18 @@ h1 span {
 /* Experience section */
 
 #experience {
+  padding: 2rem;
+  padding-top: 5rem;
+  background-color: whitesmoke;
+}
+
+#experience h2 {
+  text-align: center;
+}
+
+/* cards */
+
+#experience {
   line-height: 1.8;
 }
 
@@ -305,4 +317,27 @@ h1 span {
 
 .siema {
   margin: 1rem 0;
+}
+
+/* CV */
+
+#cv {
+  padding: 5rem;
+  background-color: whitesmoke;
+}
+
+#cv h2 {
+  text-align: center;
+}
+
+#cv img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  margin-top: 5rem;
+}
+
+#cv a {
+  cursor: pointer;
 }

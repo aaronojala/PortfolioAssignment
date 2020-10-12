@@ -341,3 +341,34 @@ h1 span {
 #cv a {
   cursor: pointer;
 }
+
+/* footer */
+
+footer {
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  padding: 3rem;
+}
+
+footer h2 {
+  margin-bottom: 2rem;
+}
+
+footer a.email {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+footer i {
+  font-size: 2rem;
+  padding: 1rem;
+}

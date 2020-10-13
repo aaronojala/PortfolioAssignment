@@ -487,8 +487,9 @@ footer i {
   }
 }
 
-/* small phones up to 320px */
-@media (max-width: 320px) {
+/* phones up to 576px */
+
+@media (max-width: 576px) {
   /* mobile menu */
 
   header {
@@ -546,13 +547,18 @@ footer i {
     color: whitesmoke;
   }
 
-  /* hero banner */
+  #experience img.carousel {
+    width: 90%;
+    height: 20rem;
+  }
+}
 
+/* small phones up to 320px */
+
+@media (max-width: 320px) {
   h1 {
     font-size: 2rem;
   }
-
-  /* About me section */
 
   .aboutbox {
     display: flex;
@@ -564,8 +570,6 @@ footer i {
   .aboutcontent {
     width: 300px;
   }
-
-  /* image caousel */
 
   #experience img.carousel {
     width: 90%;

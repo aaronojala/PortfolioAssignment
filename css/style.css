@@ -553,6 +553,14 @@ footer i {
   }
 }
 
+/* phones up to 426px */
+
+@media (max-width: 426px) {
+  #experience img.carousel {
+    height: 12rem;
+  }
+}
+
 /* small phones up to 320px */
 
 @media (max-width: 320px) {

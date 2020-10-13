@@ -36,6 +36,10 @@ header {
   z-index: 2;
 }
 
+.icon {
+  display: none;
+}
+
 nav ul li {
   display: inline-block;
 }
@@ -453,5 +457,90 @@ footer i {
 
   .backToTop {
     display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  /* mobile menu */
+
+  header {
+    position: static;
+  }
+
+  main {
+    margin-top: 0;
+  }
+
+  header .icon {
+    display: block;
+  }
+
+  header a {
+    color: whitesmoke;
+  }
+
+  header nav ul {
+    display: none;
+    position: absolute;
+    top: 87px;
+    left: 0;
+    background-color: whitesmoke;
+    width: 100%;
+    z-index: 1;
+  }
+
+  header nav ul.mobilemenu {
+    display: block;
+  }
+
+  header nav ul.mobilemenu a {
+    color: #333;
+  }
+
+  header nav ul li {
+    display: block;
+  }
+
+  header nav ul li a {
+    display: block;
+    padding: 0.5rem;
+  }
+
+  header nav ul li ul {
+    display: block;
+    position: relative;
+    top: 0;
+    padding-left: 1rem;
+  }
+
+  header nav ul li a:hover {
+    background-color: #39ff14;
+    color: whitesmoke;
+  }
+
+  /* hero banner */
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  /* About me section */
+
+  .aboutbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .aboutcontent {
+    width: 300px;
+  }
+
+  /* image caousel */
+
+  #experience img.carousel {
+    width: 90%;
+    height: 10rem;
   }
 }

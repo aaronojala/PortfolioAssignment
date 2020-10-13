@@ -29,3 +29,11 @@ const mySiema = new Siema({
 });
 
 setInterval(() => mySiema.next(), 5000);
+
+// mobile menu
+
+const mobileMenu = () => {
+  const menu = document.querySelector('ul');
+
+  menu.classList.toggle('mobilemenu');
+};

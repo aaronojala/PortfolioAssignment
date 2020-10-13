@@ -419,7 +419,34 @@ footer i {
   visibility: visible;
 }
 
-/* Ipad */
+/* media queries */
+
+/* desktops up to 992px */
+
+@media (max-width: 992px) {
+  #about img {
+    width: 60%;
+    height: 90%;
+  }
+
+  .aboutbox {
+    margin-right: 2.5rem;
+  }
+
+  .aboutcontent {
+    width: 300px;
+  }
+
+  .aboutcontent p {
+    font-size: 12px;
+  }
+
+  #experience img.carousel {
+    width: 60%;
+  }
+}
+
+/* tablets up to 768px */
 
 @media (max-width: 768px) {
   #about {
@@ -460,6 +487,7 @@ footer i {
   }
 }
 
+/* small phones up to 320px */
 @media (max-width: 320px) {
   /* mobile menu */
 

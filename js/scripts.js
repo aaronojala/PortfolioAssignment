@@ -1,10 +1,9 @@
 // back to top button
 
-jQuery(document).ready(function() {
-  
+jQuery(document).ready(function () {
   var btn = $('.backToTop');
 
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(window).scrollTop() > 300) {
       btn.addClass('show');
     } else {
@@ -12,23 +11,11 @@ jQuery(document).ready(function() {
     }
   });
 
-  btn.on('click', function(e) {
+  btn.on('click', function (e) {
     e.preventDefault();
-    $('html, body').animate({scrollTop:0}, '300');
+    $('html, body').animate({ scrollTop: 0 }, '300');
   });
-
 });
-
-
-// image carousel
-
-const mySiema = new Siema({
-  perPage: 1,
-  duration: 1000,
-  loop: true,
-});
-
-setInterval(() => mySiema.next(), 5000);
 
 // mobile menu
 
